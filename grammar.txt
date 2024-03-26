@@ -1,0 +1,13 @@
+
+<File>  ::=  <Section><File> | <KeyValue><File> | ⟂<File> | <Comment><File> | <Section> | <KeyValue> | <Comment> | ⟂  
+<Comment> ::= {All_but_\n}
+<KeyValue>  ::= <Name> = <Value>
+<Section>  ::= [<Name> {.<Name>}]
+<Array>  ::= [ {<Value>,} ]
+<Value>  ::= <Number> | <Bool> | <String> | <Array>
+<Number>  ::= +<Number> {.Number} |-<Number>{. Number} |<Number>{.Number}
+<NumSequence> ::= digit | digit <Number >
+<Bool> ::= true | false
+<String> ::=  "{symb}"
+<Name> ::=  name_symb {name_symb}
+

@@ -1,0 +1,5 @@
+if(EXISTS "D:/ITMOlabs/basics_c++/labwork-6-DaryaPanyukova/cmake-build-debug/tests/parser_tests[1]_tests.cmake")
+  include("D:/ITMOlabs/basics_c++/labwork-6-DaryaPanyukova/cmake-build-debug/tests/parser_tests[1]_tests.cmake")
+else()
+  add_test(parser_tests_NOT_BUILT parser_tests_NOT_BUILT)
+endif()
